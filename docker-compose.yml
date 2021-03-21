@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    command: ["gunicorn", "-b", "${IP}:${PORT}", "app"]
+    ports:
+      - "${PORT}:${PORT}"
