@@ -1,6 +1,13 @@
 # iCompaas
 Python Coding Assignment from iCompaas
 
+Instructions to run:
+'docker-compose build'
+'docker-compose up'
+
+It should be accesible from 127.0.0.1:8000
+
+
 ```
 Hi John,
 
