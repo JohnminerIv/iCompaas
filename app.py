@@ -1,6 +1,11 @@
+"""
+The solution is not very elegant. There are much more secure ways of allowing
+user input, I think, such as simply escaping everything by hex encoding it before
+placing it into the DB, or using prepared statments. I tried not to use any
+external libraries besides flask so that I solved the core problem. I wouldn't
+want to use this code in production though.
+"""
 from flask import Flask, render_template, request, redirect, jsonify
-from flask.helpers import url_for
-from werkzeug.utils import escape
 
 app = Flask(__name__)
 
